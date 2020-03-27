@@ -5,7 +5,7 @@ function TimeLine() {
     return(
         <div className="timeline">
             <ul>
-                <li>
+                <li data-aos="fade-up">
                     <TimeLineItem 
                         title="British Columbia Institute of Technology"
                         position="Computer System Technology Diploma"
@@ -14,7 +14,7 @@ function TimeLine() {
                         time="September 2019 - April 2021"
                     />
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <TimeLineItem 
                         title="Victor Immigration Inc."
                         position="Immigration Consult"
@@ -23,7 +23,7 @@ function TimeLine() {
                         time="December 2018 - July 2019"
                     />
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <TimeLineItem 
                         title="Simon Fraser University"
                         position="Bachelor of Arts in Economics"
@@ -32,7 +32,7 @@ function TimeLine() {
                         time="September 2015 - August 2018"
                     />
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <TimeLineItem 
                         title="T&amp;T Supermarket"
                         position="Grocery Assistant"

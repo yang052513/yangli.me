@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+
+    /* 简介部分 */
+    #intro-section {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 50px;
+        justify-items: center;
+    }
+
+    .intro-section-content {
+        text-align: center;
+    }
+
+    #intro-hey {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .intro-section-profile {
+        grid-row: 1;
+    }
+
+    /* 关闭导航栏可视度 */
+    #nav-bar {
+        display: none;
+    }
+
+    /* 关于我的部分 */
+    #about-section-wrap {
+        display: grid;
+        justify-items: center;
+    }
+
+    #about-section-img img {
+        width: 450px;
+        height: auto;
+    }
+
+    #dl-resume-btn-wrap {
+        transform: translate(0, 0);
+        padding-left: 20px;
+    }
+
+    .project-showcase {
+        width: 350px;
+        height: auto;
+    }
+}

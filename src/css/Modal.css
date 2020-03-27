@@ -1,0 +1,140 @@
+.project-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.project-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    height: 500px;
+    padding: 0 25px 50px 25px;
+}
+
+.modal-content-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 0;
+    color: #3DA3F4;
+}
+
+.modal-content-wrap {
+    display: flex;
+}
+
+.modal-content-img {
+    width: 500px;
+    height: auto;
+}
+
+.modal-description-title {
+    font-size: 20px;
+    color: #3DA3F4;
+}
+
+.modal-description-content {
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    line-height: 1.6em;
+    padding: 10px 0;
+    padding-right: 10px;
+}
+
+.modal-cancel-btn {
+    width: auto;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px;
+}
+
+.modal-description-content li {
+    list-style-type: none;
+}
+
+/* 标签技能部分 */
+.modal-content-tag-wrap {
+    padding: 10px 0;
+}
+
+.modal-content-tag {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #f4f4f4;
+    color: #505050;
+    width: auto;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin-right: 10px;
+    transition: color 0.5s, border 0.5s;
+}
+
+.modal-content-tag:hover {
+    border: 1px solid #3DA3F4;
+    color: #3DA3F4;
+}
+
+.live-demo {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    color: #3DA3F4;
+    background-color: white;
+    border: 1px solid #3DA3F4;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+
+.live-demo:hover {
+    color: white;
+    background-color: #3DA3F4;
+
+}
+
+/* showcase hover */
+.showcase-overlay {
+    background-color: rgba(61, 163, 244, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.showcase-overlay:hover {
+    opacity: 1;
+}
+
+.showcase-container {
+    position: relative;
+}
+
+.overlay-content-wrap {
+    padding: 100px 30px;
+    color: white;
+}
+
+.overlay-tit {
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-400px);
+}
+
+.overlay-cont {
+    padding: 10px 0;
+    line-height: 1.5em;
+    transform: translateX(400px);
+}

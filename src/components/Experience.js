@@ -5,7 +5,7 @@ import '../css/Experience.css'
 function Experience() {
     return(
         <div id="experience-section" className="module-layout">
-            <h3 className="section-title">EXPERIENCES</h3>
+            <h3 className="section-title" data-aos="fade-up">EXPERIENCES</h3>
             <TimeLine />
         </div>
     )

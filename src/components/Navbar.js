@@ -3,7 +3,7 @@ import '../css/Navbar.css'
 
 function Navbar() {
     return(
-        <div className="navbar-wrap">
+        <div id="nav-bar" className="navbar-wrap">
             <a className="nav-link nav-link-ltr">ABOUT</a>
             <a className="nav-link nav-link-ltr">SKILLS</a>
             <a className="nav-link nav-link-ltr">EXPERIENCE</a>

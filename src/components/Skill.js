@@ -4,9 +4,9 @@ import '../css/Skill.css'
 
 function Skill() {
     return(
-        <div id="skill-section" class="module-layout" >
+        <div id="skill-section" class="module-layout" data-aos="fade-up">
             <h3 className="section-title">SKILLS</h3>
-            <div id="skill-section-wrap">
+            <div id="skill-section-wrap" data-aos="fade-up">
                 <SkillBlock 
                     imgUrl="resource/uidesign.png" 
                     title="UI/UX Design" 

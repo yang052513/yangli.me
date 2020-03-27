@@ -3,7 +3,7 @@ import '../css/Form.css'
 
 function Form() {
     return(
-        <div className="form-wrap" class="module-layout">
+        <div className="form-wrap" data-aos="fade-up">
             <form>
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name?" required />

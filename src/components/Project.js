@@ -13,7 +13,7 @@ function Project() {
     return(
         <div id="project-section-showcase">
             <div id="project-section" class="module-layout">
-                <h3 className="section-title">PROJECTS</h3>
+                <h3 className="section-title" data-aos="fade-up">PROJECTS</h3>
                 <div id="project-case-wrap">
                     {projectComponents}
                 </div>

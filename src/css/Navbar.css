@@ -14,6 +14,7 @@
     position: relative;
     opacity: 0.75;
     transition: opacity 0.5s, color 0.5s;
+    cursor: pointer;
 }
 
 .nav-link:hover {

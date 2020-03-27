@@ -6,12 +6,23 @@ import Skill from './components/Skill'
 import Experience from './components/Experience'
 import Project from './components/Project'
 import Video from './components/Video'
+import VideoOverlay from './components/VideoOverlay'
 import Contact from './components/Contact'
-import Form from './components/Form'
 import Footer from './components/Footer'
-
+import ScrollBtn from './components/ScrollBtn'
+import ProjectModalWrap from './components/ProjectModalWrap'
+import AOS from 'aos'
+import './css/aos.css'
+import './css/Mobile.css'
 
 function App() {
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+        easing: 'ease',
+        delay: 100,
+    });
+
     return(
         <div>
             <Navbar />
@@ -21,9 +32,11 @@ function App() {
             <Experience />
             <Project />
             <Video />
+            <VideoOverlay />
             <Contact />
-            <Form />
-            {/* <Footer /> */}
+            <Footer />
+            <ScrollBtn />
+            <ProjectModalWrap />
         </div>
     )
 }

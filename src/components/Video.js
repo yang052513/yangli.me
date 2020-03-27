@@ -2,6 +2,7 @@ import React from 'react'
 import VideoContainer from './video/VideoContainer'
 import videoList from './JSON/videoList'
 import '../css/Video.css'
+import '../video'
 
 function Video() {
     const videoContainerComponents = videoList.map(item => 

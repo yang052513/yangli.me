@@ -2,9 +2,10 @@ import React from 'react'
 import AboutImage from './AboutImage'
 import AboutContent from './AboutContent'
 
+
 function AboutSection() {
     return(
-        <div id="about-section-wrap">
+        <div id="about-section-wrap"  data-aos="fade-up">
             <AboutImage />
             <AboutContent />
 

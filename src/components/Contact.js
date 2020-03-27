@@ -1,13 +1,14 @@
 import React from 'react'
 import ContactItem from './contact/ContactItem'
+import Form from './Form'
 import '../css/Contact.css'
 
 function Contact() {
     return (
         <div id="contact-showcase">
             <div id="contact-section" className="module-layout">
-                <h3 id="contact-title" class="section-title">CONTACT</h3>
-                <div id="contact-section-block-wrap">
+                <h3 id="contact-title" class="section-title" data-aos="fade-up">CONTACT</h3>
+                <div id="contact-section-block-wrap" data-aos="fade-up">
                     <ContactItem 
                         imgUrl="resource/location-icon.png"
                         title="Address"
@@ -25,6 +26,7 @@ function Contact() {
                     />
                 </div>
             </div>
+            <Form />
         </div>
     )
 }

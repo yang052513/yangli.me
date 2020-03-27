@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectItem(props) {
     return (
-        <div className="showcase-container">
+        <div className="showcase-container" data-aos="fade-up">
             <div id={props.project.id} className="showcase-overlay">
                 <div className="overlay-content-wrap">
                     <p className="overlay-tit">{props.project.title}</p>
