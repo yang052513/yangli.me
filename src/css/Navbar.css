@@ -1,0 +1,39 @@
+.navbar-wrap {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+    transition: opacity 0.5s, color 0.5s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #3DA3F4;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #3DA3F4;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}

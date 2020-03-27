@@ -1,0 +1,204 @@
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: #c5c5c5;
+}
+
+.timeline ul {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+/* #bbe4f9 浅蓝色 */
+/* #ecf7fd 淡蓝色 */
+
+
+/* 内容详细信息背景盒 */
+.content {
+    padding: 20px;
+	position: relative;
+	background: #ecf7fd;
+    border-radius: 0.4em;
+}
+
+.content-left:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 15%;
+	width: 0;
+	height: 0;
+	border: 16px solid transparent;
+	border-left-color: #ecf7fd;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -8px;
+    margin-right: -16px;
+}
+
+.content-right:after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 15%;
+	width: 0;
+	height: 0;
+	border: 16px solid transparent;
+	border-right-color: #ecf7fd;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -8px;
+	margin-left: -16px;
+}
+
+/* Marker 时间轴圆圈 */
+.timeline ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    right: -6px;
+    background: #bbe4f9;
+    border-radius: 50%;
+    /* box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2); */
+}
+
+.timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    left: -4px;
+    background: #bbe4f9;
+    border-radius: 50%;
+    /* box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2); */
+}
+
+.timeline ul li h3 {
+    padding: 0;
+    margin: 0;
+    color: rgb(21,21,21);
+    font-weight: bold;
+}
+
+.timeline ul li .content-details {
+    margin: 10px 0 0;
+    padding: 0;
+    color: rgb(99, 98, 98);
+}
+
+.timeline ul li .content-job {
+    margin: 10px 0 0;
+    padding: 0;
+    color: rgb(29, 29, 29);
+}
+
+.timeline ul li .time h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(21,21,21);
+}
+
+.content-details {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+/* 时间线时间 */
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -265px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #bbe4f9;
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+    /* box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3); */
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -265px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #bbe4f9;
+    color: rgb(0, 0, 0);
+    border-radius: 18px;
+    /* box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3); */
+}
+
+@media(max-width:1000px) {
+    .timeline {
+        width: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .timeline:before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+}

@@ -1,0 +1,118 @@
+
+textarea {
+    resize: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#form-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-modal-content {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form-content-wrap {
+    padding: 25px 0;
+}
+
+#return-contact-btn {
+    font-size: 15px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #3B7294;
+    color: #3B7294;
+    margin-top: 20px;
+}
+
+.form-message {
+    margin-top: 10px;
+}
+
+#return-contact-btn:hover {
+    color: white;
+    background-color: rgb(74, 152, 201);
+}
+
+#form-modal-wrap {
+    display: none;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+input,
+textarea:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Raleway sans-serif;
+    -webkit-appearance: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.submit-button {
+    text-align: center;
+}
+
+/* Center the form */
+.form-wrap {
+    width: 40%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.submit-button {
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 450px) {
+    #form-modal-content {
+        width: 300px;
+        height: 250px;
+        background-color: white;
+    }
+
+}
