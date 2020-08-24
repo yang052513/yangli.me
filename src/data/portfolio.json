@@ -1,0 +1,38 @@
+[
+  {
+    "id": "budget-project",
+    "title": "Budget Tracker",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go!",
+    "imgUrl": "resource/project-1.jpg"
+  },
+  {
+    "id": "dollars-project",
+    "title": "Dollars",
+    "desc": "Real time duararar animated style chatting app",
+    "imgUrl": "resource/project-2.jpg"
+  },
+  {
+    "id": "pinboard-project",
+    "title": "Pinboard",
+    "desc": "Save your ideas and manage your ideas",
+    "imgUrl": "resource/project-3.jpg"
+  },
+  {
+    "id": "haikyuu-project",
+    "title": "Haikyuu!",
+    "desc": "An English version of Haikyuu 4 episode log to allow me tracking my watching history",
+    "imgUrl": "resource/project-4.jpg"
+  },
+  {
+    "id": "howsurday-project",
+    "title": "Twitter",
+    "desc": "A social media app which you can send your thoughts, emotions and anything only once a day",
+    "imgUrl": "resource/project-1.jpg"
+  },
+  {
+    "id": "osaka-project",
+    "title": "Osaka Tour",
+    "desc": "My 17 days trip highlight in Osaka, Japan that shows food, otaku culture, gym and more",
+    "imgUrl": "resource/project-2.jpg"
+  }
+]
