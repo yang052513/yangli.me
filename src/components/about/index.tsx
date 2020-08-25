@@ -1,0 +1,5 @@
+export { AboutContent } from './AboutContent'
+export { AboutImage } from './AboutImage'
+export { AboutResume } from './AboutResume'
+export { AboutTag } from './AboutTag'
+export { AboutTagItem } from './AboutTagItem'

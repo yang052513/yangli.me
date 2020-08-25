@@ -9,6 +9,8 @@ const StyledContainer = styled.div`
   margin-top: 150px;
   margin-bottom: 100px;
   justify-content: space-around;
+  /* border: 1px solid red; */
+
   @media (max-width: 768px) {
     display: grid;
     grid-template-rows: 1fr 1fr;

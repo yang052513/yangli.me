@@ -1,11 +1,17 @@
 import React from 'react'
-import { AboutTagItem } from './AboutTagItem'
+import { AboutTagItem } from './index'
 import skillList from '../../data/skills.json'
+
+import styled from 'styled-components'
+
+const StyledContainer = styled.div`
+  margin: 40px 0;
+`
 
 export const AboutTag = () => {
   const tagComponents = skillList.map(tag => (
-    <AboutTagItem key={tag.id} tagItem={tag} />
+    <AboutTagItem key={tag.icon} tagItem={tag} />
   ))
 
-  return <div id="about-section-tag-wrap">{tagComponents}</div>
+  return <StyledContainer>{tagComponents}</StyledContainer>
 }
