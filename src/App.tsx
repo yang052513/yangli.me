@@ -6,7 +6,6 @@ import {
   About,
   Skill,
   Experience,
-  Contact,
   Footer,
 } from './components/index'
 
@@ -18,11 +17,7 @@ function App() {
       <About />
       <Skill />
       <Experience />
-      {/* <About />
-      <Skill />
-      <Experience />
-      <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }

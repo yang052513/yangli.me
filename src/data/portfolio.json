@@ -1,38 +1,101 @@
 [
   {
-    "id": "budget-project",
-    "title": "Budget Tracker",
-    "desc": "A financial web app allows users to login and create and update their expenses on the go!",
-    "imgUrl": "resource/project-1.jpg"
+    "title": "Budget",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
   },
   {
-    "id": "dollars-project",
     "title": "Dollars",
-    "desc": "Real time duararar animated style chatting app",
-    "imgUrl": "resource/project-2.jpg"
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
   },
   {
-    "id": "pinboard-project",
-    "title": "Pinboard",
-    "desc": "Save your ideas and manage your ideas",
-    "imgUrl": "resource/project-3.jpg"
+    "title": "Osaka Trip",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
   },
   {
-    "id": "haikyuu-project",
-    "title": "Haikyuu!",
-    "desc": "An English version of Haikyuu 4 episode log to allow me tracking my watching history",
-    "imgUrl": "resource/project-4.jpg"
+    "title": "Twitter Clone",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
   },
   {
-    "id": "howsurday-project",
-    "title": "Twitter",
-    "desc": "A social media app which you can send your thoughts, emotions and anything only once a day",
-    "imgUrl": "resource/project-1.jpg"
+    "title": "Bangumi Clone",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
   },
   {
-    "id": "osaka-project",
-    "title": "Osaka Tour",
-    "desc": "My 17 days trip highlight in Osaka, Japan that shows food, otaku culture, gym and more",
-    "imgUrl": "resource/project-2.jpg"
+    "title": "No Pandemic",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
+  },
+  {
+    "title": "Course Flex",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
+  },
+  {
+    "title": "AnimeKnow Mobile",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
+  },
+  {
+    "title": "Projecthub",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
+  },
+  {
+    "title": "AnimeKnow",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
+  },
+  {
+    "title": "COVID19 Wiki",
+    "desc": "A financial web app allows users to login and create and update their expenses on the go! Awared as the best project among the peers for 100 level project",
+    "banner": "imgPath",
+    "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
+    "demo": "budger.com",
+    "github": "/budget",
+    "preview": ["1.jpg", "2.jpg"]
   }
 ]
