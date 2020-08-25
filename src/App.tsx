@@ -16,6 +16,7 @@ function App() {
       <Navbar />
       <Banner />
       <About />
+      <Skill />
       {/* <About />
       <Skill />
       <Experience />

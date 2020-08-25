@@ -1,12 +1,25 @@
 import React from 'react'
 import { SkillBlock } from './SkillBlock'
-import '../../styles/Skill.css'
+import styled from 'styled-components'
+import * as S from '../../styles/shared'
+
+const StyledContainer = styled.div`
+  margin: 200px 50px;
+`
+const StyledGridWrapper = styled.div`
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`
 
 export const Skill: React.FC = () => {
   return (
-    <div id="skill-section" className="module-layout" data-aos="fade-up">
-      <h3 className="section-title">SKILLS</h3>
-      <div id="skill-section-wrap" data-aos="fade-up">
+    <StyledContainer>
+      <S.StyledSectionTitle>Skills</S.StyledSectionTitle>
+      <StyledGridWrapper>
         <SkillBlock
           imgUrl="resource/uidesign.png"
           title="UI/UX Design"
@@ -25,8 +38,8 @@ export const Skill: React.FC = () => {
           title="IOS App Development"
           content="I am also able to create IOS app with swift. I usually study IOS
                         developing courses during my spare time to extend my knowledge."
-        />
-      </div>
-    </div>
+        />{' '}
+      </StyledGridWrapper>
+    </StyledContainer>
   )
 }
