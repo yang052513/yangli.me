@@ -7,6 +7,7 @@ import {
   Skill,
   Experience,
   Portfolio,
+  Blog,
   Footer,
 } from './components/index'
 
@@ -19,6 +20,7 @@ function App() {
       <Skill />
       <Experience />
       <Portfolio />
+      <Blog />
       <Footer />
     </div>
   )

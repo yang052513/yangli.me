@@ -1,5 +1,4 @@
 import React from 'react'
-import demo from '../../assets/images/portfolio/dollars.png'
 import styled from 'styled-components'
 
 const StyledCard = styled.div`
@@ -85,39 +84,54 @@ const StyledDemoBtn = styled.button`
 
 interface Props {
   isEven: boolean
-  project: any
+  banner: string
+  title: string
+  desc: string
+  tools: Array<string>
+  link: string
+  linkIcon: string
+  linkText: string
 }
 
-export const PortfolioCard: React.FC<Props> = ({ isEven, project }) => {
+export const PortfolioCard: React.FC<Props> = ({
+  isEven,
+  banner,
+  title,
+  desc,
+  tools,
+  link,
+  linkIcon,
+  linkText,
+}) => {
   return (
     <StyledCard>
       {isEven && (
         <StyledImage
-          src={require(`../../assets/images/portfolio/${project.banner}`)}
+          src={require(`../../assets/images/portfolio/${banner}`)}
           alt=""
         ></StyledImage>
       )}
 
       <StyledInfoWrapper>
-        <StyledTitle>{project.title}</StyledTitle>
-        <StyledDesc>{project.desc}</StyledDesc>
+        <StyledTitle>{title}</StyledTitle>
+        <StyledDesc>{desc}</StyledDesc>
         <StyledToolsWrapper>
           <ul>
-            {project.tags.map((tool: any) => (
+            {tools.map((tool: any) => (
               <StyledTools>{tool}</StyledTools>
             ))}
           </ul>
         </StyledToolsWrapper>
 
         <StyledGithub>
-          <i className="fab fa-github"></i>
-          <a href="https://github.com/yang052513/mywebsite">course-flex</a>
+          <i className={linkIcon}></i>
+          <a href={link}>{linkText}</a>
         </StyledGithub>
         <StyledDemoBtn>Live Demo</StyledDemoBtn>
       </StyledInfoWrapper>
       {!isEven && (
         <StyledImage
-          src={require(`../../assets/images/portfolio/${project.banner}`)}
+          src={require(`../../assets/images/portfolio/${banner}`)}
           alt=""
         ></StyledImage>
       )}

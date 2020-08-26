@@ -1,10 +1,20 @@
 import React from 'react'
-import '../../styles/Footer.css'
 
+import styled from 'styled-components'
+
+const StyledFooter = styled.div`
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(237, 236, 236);
+  background-color: rgb(31, 31, 31);
+`
 export const Footer: React.FC = () => {
   return (
-    <div id="footer-section" className="module-layout">
+    <StyledFooter>
       <p>All right reserved Yang Li @2020</p>
-    </div>
+    </StyledFooter>
   )
 }

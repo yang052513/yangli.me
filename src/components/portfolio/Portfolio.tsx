@@ -1,23 +1,68 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import * as S from '../../styles/shared'
-import { PortfolioCard } from './PortfolioCard'
-import portfolioData from '../../data/portfolio.json'
+import { PortfolioWeb } from './PortfolioWeb'
+import { PortfolioNPM } from './PortfolioNPM'
+import { PortfolioUI } from './PortfolioUI'
+import { PortfolioVideo } from './PortfolioVideo'
 
-const StyledCardContainer = styled.div`
-  display: grid;
-  justify-items: center;
+const StyledSelectContainer = styled.div`
+  width: fit-content;
+  margin: 0 auto 20px auto;
+`
+const StyledButton = styled.button`
+  border: 1px solid #03a9f4;
+  color: #03a9f4;
+  width: auto;
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  margin: 15px 20px 15px 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s;
+  &:hover {
+    color: white;
+    background-color: #03a9f4;
+  }
+  &:focus {
+    outline: none;
+  }
 `
 
-const portfolioList = portfolioData.map((project, index) => (
-  <PortfolioCard project={project} isEven={index % 2 == 0 ? true : false} />
-))
-
 export const Portfolio: React.FC = () => {
+  const [panel, setPanel] = useState<string>('web')
+
+  const handleSwitch = (tab: string) => {
+    setPanel(tab)
+  }
+
   return (
     <S.StyledContainer>
       <S.StyledSectionTitle>Portfolio</S.StyledSectionTitle>
-      <StyledCardContainer>{portfolioList}</StyledCardContainer>
+      <StyledSelectContainer>
+        <StyledButton onClick={() => handleSwitch('web')}>
+          Wep and Mobile Apps
+        </StyledButton>
+        <StyledButton onClick={() => handleSwitch('ui')}>
+          UI/UX Design
+        </StyledButton>
+        <StyledButton onClick={() => handleSwitch('npm')}>
+          NPM Packages
+        </StyledButton>
+        <StyledButton onClick={() => handleSwitch('video')}>
+          Video Production
+        </StyledButton>
+      </StyledSelectContainer>
+
+      {panel === 'web' ? (
+        <PortfolioWeb />
+      ) : panel === 'ui' ? (
+        <PortfolioUI />
+      ) : panel === 'npm' ? (
+        <PortfolioNPM />
+      ) : (
+        <PortfolioVideo />
+      )}
     </S.StyledContainer>
   )
 }
