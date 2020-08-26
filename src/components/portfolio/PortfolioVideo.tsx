@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import videoData from '../../data/video.json'
 import { PortfolioCard } from './PortfolioCard'
+import { PortfolioVideoPlayer } from './PortfolioVideoPlayer'
 
 const StyledCardContainer = styled.div`
   display: grid;
@@ -21,7 +22,13 @@ export const PortfolioVideo: React.FC = () => {
     })
   }
 
-  console.log(video)
+  const closeVideo = () => {
+    setVideo({
+      play: false,
+      src: '',
+    })
+    console.log('关闭')
+  }
 
   const videoList = videoData.map((video, index) => (
     <PortfolioCard
@@ -39,5 +46,13 @@ export const PortfolioVideo: React.FC = () => {
     />
   ))
 
-  return <StyledCardContainer>{videoList}</StyledCardContainer>
+  return (
+    <StyledCardContainer>
+      {videoList}
+
+      {video.play && (
+        <PortfolioVideoPlayer source={video.src} closeVideo={closeVideo} />
+      )}
+    </StyledCardContainer>
+  )
 }
