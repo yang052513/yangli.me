@@ -1,5 +1,5 @@
 import React from 'react'
-import demo from '../../assets/images/test.png'
+import demo from '../../assets/images/portfolio/dollars.png'
 import styled from 'styled-components'
 
 const StyledCard = styled.div`
@@ -33,8 +33,8 @@ const StyledTitle = styled.h3`
 const StyledDesc = styled.p`
   color: rgb(70, 70, 70);
   margin: 20px 0;
-  font-size: 15px;
-  line-height: 1.3rem;
+  font-size: 14px;
+  line-height: 1.5rem;
 `
 
 const StyledToolsWrapper = styled.div`
@@ -47,6 +47,7 @@ const StyledTools = styled.li`
   display: inline-block;
   margin: 0 10px 10px 0;
   color: #a7a7a7;
+  font-size: 14px;
 `
 
 const StyledGithub = styled.div`
@@ -90,7 +91,12 @@ interface Props {
 export const PortfolioCard: React.FC<Props> = ({ isEven, project }) => {
   return (
     <StyledCard>
-      {isEven && <StyledImage src={demo} alt=""></StyledImage>}
+      {isEven && (
+        <StyledImage
+          src={require(`../../assets/images/portfolio/${project.banner}`)}
+          alt=""
+        ></StyledImage>
+      )}
 
       <StyledInfoWrapper>
         <StyledTitle>{project.title}</StyledTitle>
@@ -109,7 +115,12 @@ export const PortfolioCard: React.FC<Props> = ({ isEven, project }) => {
         </StyledGithub>
         <StyledDemoBtn>Live Demo</StyledDemoBtn>
       </StyledInfoWrapper>
-      {!isEven && <StyledImage src={demo} alt=""></StyledImage>}
+      {!isEven && (
+        <StyledImage
+          src={require(`../../assets/images/portfolio/${project.banner}`)}
+          alt=""
+        ></StyledImage>
+      )}
     </StyledCard>
   )
 }

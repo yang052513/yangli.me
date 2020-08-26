@@ -2,16 +2,16 @@
   {
     "title": "Budget",
     "desc": "💸 A lovely animated expense tracker with live 2D widget built with Javascript. The best project for 100 level project course.",
-    "banner": "imgPath",
+    "banner": "budget.png",
     "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase", "jQuery"],
-    "demo": "budger.com",
+    "demo": "https://comp1930-inclass.firebaseapp.com",
     "github": "/budget",
     "preview": ["1.jpg", "2.jpg"]
   },
   {
     "title": "Dollars",
     "desc": "💬 Real time duararar animation style chatting app. The idea was inspired by animation Duararar which everyone using an anonymous chatting room, so what you said does not related to your real person. The advantage is there's no restriction on login, and you can just came in chill and go.",
-    "banner": "imgPath",
+    "banner": "dollars.png",
     "tags": ["HTML5", "CSS3", "Javascript", "Firebase", "jQuery"],
     "demo": "budger.com",
     "github": "/budget",
@@ -20,7 +20,7 @@
   {
     "title": "Osaka Trip",
     "desc": "🗻 My two week highlights trip in Osaka, Japan. I had so many surprises in Japan regarding their lifestyle and personality. By chance I visitedt he world champion's powerlifting gym. I had a really good time during that two weeks and would like to share to everyone",
-    "banner": "imgPath",
+    "banner": "osaka.png",
     "tags": ["HTML5", "Less", "Adobe XD", "Netlify", "UI/UX", "Static Site"],
     "demo": "budger.com",
     "github": "/budget",
@@ -29,7 +29,7 @@
   {
     "title": "Twitter Clone",
     "desc": "🐦 A Twitter clone social meida web app made by Vanilla Javascript. I made this app to practice grid layout and image storage database while studying in the first semester",
-    "banner": "imgPath",
+    "banner": "twitter.png",
     "tags": ["HTML5", "CSS3", "Javascript", "Firebase", "jQuery"],
     "demo": "budger.com",
     "github": "/budget",
@@ -38,7 +38,7 @@
   {
     "title": "Bangumi Clone",
     "desc": "📒 Bangumi clone Haikyuu animation watching log. My favourite animation Haikyuu is coming to the end. The last season, season 4. I decied to make a web app that allow me to track episode status and details about the animation",
-    "banner": "imgPath",
+    "banner": "bangumi.png",
     "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase", "jQuery"],
     "demo": "budger.com",
     "github": "/budget",
@@ -47,7 +47,7 @@
   {
     "title": "No Pandemic",
     "desc": "💊 A platform to prevent pandemic and panic. A project for BCIT CST level 1 and level competition. Awarded as Most Creative and Best Teamwork prize among 60 teams.",
-    "banner": "imgPath",
+    "banner": "nopandemic.png",
     "tags": ["HTML5", "CSS3", "Javascript", "Figama", "Firebase"],
     "demo": "budger.com",
     "github": "/budget",
@@ -56,7 +56,7 @@
   {
     "title": "Course Flex",
     "desc": "🗓 Coquitlam college course schedule generator with timetable preview. The app allows students filter and search courses easily without submit a form then direct to a new page everytime Then the app will generate a timetable for student to preview the course schedule. Easy and quick. No more long time gap between classes.",
-    "banner": "imgPath",
+    "banner": "courseflex.png",
     "tags": ["React", "Node", "Express", "MongoDB", "Heroku", "Python"],
     "demo": "budger.com",
     "github": "/budget",
@@ -65,7 +65,7 @@
   {
     "title": "AnimeKnow Mobile",
     "desc": "📱 AnimeKnow mobile version built with react native allows users get daily animation feed, search more than ten thousand subjects with Bangumi API, and the top animation recommend swipe card feature.",
-    "banner": "imgPath",
+    "banner": "animeknow-mobile.png",
     "tags": [
       "React Native",
       "React Navigation",
@@ -81,7 +81,7 @@
   {
     "title": "Projecthub",
     "desc": "🔖 wow such a lovely project management dashboard. A full stack web app that intergeates individual and team project status managerment, periodic anlaysis, socal system including story share and chat feature. Included fully customize setting to custom your app.",
-    "banner": "imgPath",
+    "banner": "projecthub.png",
     "tags": ["React", "Typescript", "Sass", "Sketch", "Firebase"],
     "demo": "budger.com",
     "github": "/budget",
@@ -90,7 +90,7 @@
   {
     "title": "AnimeKnow",
     "desc": "🌚 Daily air animations feeds, search more than ten thousand subject with real time preview, and random anime recommendation feature.",
-    "banner": "imgPath",
+    "banner": "animeknow.png",
     "tags": ["React", "Sass", "Python", "Sketch", "Netlify", "RESTful APIs"],
     "demo": "budger.com",
     "github": "/budget",
@@ -99,7 +99,7 @@
   {
     "title": "COVID19 Wiki",
     "desc": "😷 A web app that shows COVID19 preventation strategies and case tracking to help people better understand the pandemic and how to take care of themselves.",
-    "banner": "imgPath",
+    "banner": "covid19.png",
     "tags": ["React", "Sass", "Adobe Xd", "Static Site", "Netlify"],
     "demo": "budger.com",
     "github": "/budget",
