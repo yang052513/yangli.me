@@ -23,7 +23,7 @@ const StyledImage = styled.img`
 const StyledInfoWrapper = styled.div`
   flex: 1 1 200px;
   padding: 25px;
-  background-color: #f8f8f8;
+  background-color: #ecf7fd;
 `
 
 const StyledTitle = styled.h3`
@@ -44,7 +44,7 @@ const StyledToolsWrapper = styled.div`
 `
 
 const StyledTools = styled.li`
-  display: inline;
+  display: inline-block;
   margin: 0 10px 10px 0;
   color: #a7a7a7;
 `
@@ -82,25 +82,24 @@ const StyledDemoBtn = styled.button`
   }
 `
 
-export const PortfolioCard: React.FC = () => {
+interface Props {
+  isEven: boolean
+  project: any
+}
+
+export const PortfolioCard: React.FC<Props> = ({ isEven, project }) => {
   return (
     <StyledCard>
-      <StyledImage src={demo} alt=""></StyledImage>
+      {isEven && <StyledImage src={demo} alt=""></StyledImage>}
+
       <StyledInfoWrapper>
-        <StyledTitle>Course Flex</StyledTitle>
-        <StyledDesc>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
-          enim illum natus itaque vitae tempora facere officia dolores rerum
-          reprehenderit.
-        </StyledDesc>
+        <StyledTitle>{project.title}</StyledTitle>
+        <StyledDesc>{project.desc}</StyledDesc>
         <StyledToolsWrapper>
           <ul>
-            <StyledTools>React</StyledTools>
-            <StyledTools>Typescript</StyledTools>
-            <StyledTools>Node.js</StyledTools>
-            <StyledTools>Express</StyledTools>
-            <StyledTools>MongoDB</StyledTools>
-            <StyledTools>Heroku</StyledTools>
+            {project.tags.map((tool: any) => (
+              <StyledTools>{tool}</StyledTools>
+            ))}
           </ul>
         </StyledToolsWrapper>
 
@@ -110,6 +109,7 @@ export const PortfolioCard: React.FC = () => {
         </StyledGithub>
         <StyledDemoBtn>Live Demo</StyledDemoBtn>
       </StyledInfoWrapper>
+      {!isEven && <StyledImage src={demo} alt=""></StyledImage>}
     </StyledCard>
   )
 }
