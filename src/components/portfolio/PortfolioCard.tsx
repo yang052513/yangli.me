@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const StyledCard = styled.div`
@@ -10,14 +10,35 @@ const StyledCard = styled.div`
     width: 100%;
   }
 `
-const StyledImage = styled.img`
-  width: 400px;
-  height: auto;
-  object-fit: cover;
+const StyledImageContainer = styled.div`
   flex: 1 1 400px;
+  position: relative;
+`
+const StyledImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
   @media (max-width: 800px) {
     width: 100%;
   }
+`
+const StyledOverlay = styled.div`
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+`
+
+const StyledPlyBtn = styled.i`
+  color: white;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `
 const StyledInfoWrapper = styled.div`
   flex: 1 1 200px;
@@ -83,7 +104,14 @@ const StyledDemoBtn = styled.button`
 `
 
 interface Props {
+  video?: {
+    play: boolean
+    src: string
+  }
+  playVideo?: any
+  isVideo?: boolean
   isEven: boolean
+  id?: any
   banner: string
   title: string
   desc: string
@@ -94,7 +122,11 @@ interface Props {
 }
 
 export const PortfolioCard: React.FC<Props> = ({
+  video,
+  playVideo,
+  isVideo,
   isEven,
+  id,
   banner,
   title,
   desc,
@@ -103,13 +135,29 @@ export const PortfolioCard: React.FC<Props> = ({
   linkIcon,
   linkText,
 }) => {
+  const [showPlyBtn, setShowPlyBtn] = useState<boolean>(false)
+
   return (
     <StyledCard>
       {isEven && (
-        <StyledImage
-          src={require(`../../assets/images/portfolio/${banner}`)}
-          alt=""
-        ></StyledImage>
+        <StyledImageContainer
+          onMouseEnter={() => setShowPlyBtn(true)}
+          onMouseLeave={() => setShowPlyBtn(false)}
+        >
+          <StyledImage
+            src={require(`../../assets/images/portfolio/${banner}`)}
+            alt=""
+          ></StyledImage>
+          {showPlyBtn && isVideo ? (
+            <div>
+              <StyledOverlay></StyledOverlay>
+              <StyledPlyBtn
+                className="fab fa-youtube"
+                onClick={() => playVideo(id)}
+              ></StyledPlyBtn>
+            </div>
+          ) : null}
+        </StyledImageContainer>
       )}
 
       <StyledInfoWrapper>
@@ -130,10 +178,24 @@ export const PortfolioCard: React.FC<Props> = ({
         <StyledDemoBtn>Live Demo</StyledDemoBtn>
       </StyledInfoWrapper>
       {!isEven && (
-        <StyledImage
-          src={require(`../../assets/images/portfolio/${banner}`)}
-          alt=""
-        ></StyledImage>
+        <StyledImageContainer
+          onMouseEnter={() => setShowPlyBtn(true)}
+          onMouseLeave={() => setShowPlyBtn(false)}
+        >
+          <StyledImage
+            src={require(`../../assets/images/portfolio/${banner}`)}
+            alt=""
+          ></StyledImage>
+          {showPlyBtn && isVideo ? (
+            <div>
+              <StyledOverlay></StyledOverlay>
+              <StyledPlyBtn
+                className="fab fa-youtube"
+                onClick={() => playVideo(id)}
+              ></StyledPlyBtn>
+            </div>
+          ) : null}
+        </StyledImageContainer>
       )}
     </StyledCard>
   )
