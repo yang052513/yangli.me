@@ -5,7 +5,14 @@ import { PortfolioNPMCard } from './PortfolioNPMCard'
 
 const StyledCardContainer = styled.div`
   display: grid;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fill, 500px);
+  grid-gap: 25px;
+  justify-content: center;
+  row-gap: 30px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 400px);
+  }
 `
 
 const npmList = npmData.map(npm => (
