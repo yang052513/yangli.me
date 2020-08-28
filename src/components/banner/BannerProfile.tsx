@@ -17,7 +17,7 @@ const StyledTitle = styled.h2`
 
 const StyledSubTitle = styled.h4`
   font-size: 22px;
-  color: rgb(70, 70, 70);
+  color: #03a9f4;
   margin-top: 10px;
 `
 

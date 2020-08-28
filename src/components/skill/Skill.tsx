@@ -14,7 +14,7 @@ const StyledGridWrapper = styled.div`
 
 export const Skill: React.FC = () => {
   return (
-    <S.StyledContainer>
+    <S.StyledContainer id="skill">
       <S.StyledSectionTitle data-aos="fade-up">Skills</S.StyledSectionTitle>
       <S.StyledSectionSubtitle data-aos="fade-up">
         People like to see beautiful things, so all the effort on design are

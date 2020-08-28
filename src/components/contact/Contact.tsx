@@ -59,7 +59,7 @@ const StyledButton = styled.button`
 
 export const Contact: React.FC = () => {
   return (
-    <S.StyledContainer>
+    <S.StyledContainer id="contact">
       <S.StyledSectionTitle data-aos="fade-up">Contact Me</S.StyledSectionTitle>
       <S.StyledSectionSubtitle data-aos="fade-up">
         Wanna grap a coffee sometime?

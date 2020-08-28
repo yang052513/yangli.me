@@ -7,31 +7,37 @@
     "icon": "fab fa-css3-alt",
     "text": "CSS3"
   },
-
+  {
+    "icon": "fab fa-js",
+    "text": "JavaScript"
+  },
+  {
+    "icon": "fab fa-node",
+    "text": "Node"
+  },
   {
     "icon": "fab fa-react",
     "text": "React"
   },
   {
-    "icon": "fab fa-js",
-    "text": "JavaScript"
+    "icon": "fab fa-vuejs",
+    "text": "Vue"
+  },
+  {
+    "icon": "fab fa-angular",
+    "text": "Angular"
   },
   {
     "icon": "fab fa-less",
     "text": "Less"
   },
   {
-    "icon": "fab fa-node",
-    "text": "Node.js"
-  },
-
-  {
-    "icon": "fab fa-vuejs",
-    "text": "Vue"
+    "icon": "fab fa-sass",
+    "text": "Sass"
   },
   {
     "icon": "fas fa-database",
-    "text": "Oracle SQL"
+    "text": "MongoDB"
   },
   {
     "icon": "fas fa-code-branch",

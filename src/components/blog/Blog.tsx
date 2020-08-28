@@ -15,7 +15,7 @@ export const Blog: React.FC = () => {
     <BlogCard key={blog.title} blog={blog} />
   ))
   return (
-    <S.StyledContainer>
+    <S.StyledContainer id="blogs">
       <S.StyledSectionTitle data-aos="fade-up">
         Recent Blogs
       </S.StyledSectionTitle>

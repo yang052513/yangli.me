@@ -17,9 +17,10 @@ export const PortfolioWeb: React.FC = () => {
       title={project.title}
       desc={project.desc}
       tools={project.tags}
-      link={project.demo}
+      link={project.github}
       linkText={project.github}
       linkIcon={'fab fa-github'}
+      demo={project.demo}
     />
   ))
   return <StyledCardContainer>{portfolioList}</StyledCardContainer>

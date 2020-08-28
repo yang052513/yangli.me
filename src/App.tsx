@@ -33,7 +33,7 @@ function App() {
       <Blog />
       <Contact />
       <Footer />
-      <Scroll borderRadius="50%" color="#03a9f4" xOffset={-20} yOffset={-20} />
+      <Scroll borderRadius="50%" color="#03a9f4" xOffset={-20} yOffset={-40} />
     </div>
   )
 }

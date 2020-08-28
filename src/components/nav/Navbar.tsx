@@ -42,11 +42,11 @@ const StyledLink = styled.a`
 export const Navbar: React.FC = () => {
   return (
     <StyledContainer>
-      <StyledLink>ABOUT</StyledLink>
-      <StyledLink>SKILLS</StyledLink>
-      <StyledLink>EXPERIENCE</StyledLink>
-      <StyledLink>PORTFOLIO</StyledLink>
-      <StyledLink>BLOGS</StyledLink>
+      <StyledLink href="#about">ABOUT</StyledLink>
+      <StyledLink href="#skill">SKILLS</StyledLink>
+      <StyledLink href="#experience">EXPERIENCE</StyledLink>
+      <StyledLink href="#portfolio">PORTFOLIO</StyledLink>
+      <StyledLink href="#blogs">BLOGS</StyledLink>
     </StyledContainer>
   )
 }

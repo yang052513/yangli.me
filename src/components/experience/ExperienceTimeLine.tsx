@@ -115,7 +115,7 @@ const StyledTimelineItem = styled.li`
 
 export const ExperienceTimeLine: React.FC = () => {
   return (
-    <StyledTimeline>
+    <StyledTimeline data-aos="fade-up">
       <ul>
         <StyledTimelineItem>
           <ExperienceTimeLineItem

@@ -45,6 +45,7 @@ export const PortfolioVideo: React.FC = () => {
       link={video.demo}
       linkText={'Bilibili'}
       linkIcon={'fab fa-youtube'}
+      demo={video.demo}
     />
   ))
 

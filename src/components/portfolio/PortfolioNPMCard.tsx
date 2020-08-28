@@ -87,7 +87,9 @@ export const PortfolioNPMCard: React.FC<Props> = ({
             <StyledTitle>{title}</StyledTitle>
             <StyledDesc>{desc}</StyledDesc>
             <div style={{ textAlign: 'center' }}>
-              <StyledLink>Link</StyledLink>
+              <a href={link}>
+                <StyledLink>Link</StyledLink>
+              </a>
             </div>
           </div>
         </StyledDetails>

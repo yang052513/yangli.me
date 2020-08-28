@@ -5,7 +5,7 @@ import skillList from '../../data/skills.json'
 import styled from 'styled-components'
 
 const StyledContainer = styled.div`
-  margin: 40px 0;
+  margin: 20px 0;
 `
 
 export const AboutTag = () => {

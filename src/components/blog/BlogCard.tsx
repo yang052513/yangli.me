@@ -62,7 +62,11 @@ export const BlogCard: React.FC<Props> = ({ blog }) => {
       <StyledTextWrapper>
         <h3>{blog.title}</h3>
         <StyledDesc>{blog.desc}</StyledDesc>
-        <StyledButton>Read More</StyledButton>
+        <a href={blog.link}>
+          {' '}
+          <StyledButton>Read More</StyledButton>
+        </a>
+
         <StyledDate>Last update on {blog.date}</StyledDate>
       </StyledTextWrapper>
     </StyledCard>

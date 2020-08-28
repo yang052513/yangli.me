@@ -12,15 +12,15 @@
     "title": "How to Publis Your First NPM Package",
     "date": "June 14, 2020",
     "desc": "In this article we will go over how to set up an typescript project and publish the package to npm community......",
-    "tags": ["Algorithim", "Sorting", "Graph"],
-    "link": "https://yangblog.org/2020/06/15/10-common-algo-review/"
+    "tags": ["NPM", "Package", "React", "Typescript"],
+    "link": "https://yangblog.org/2020/06/15/08-your-first-npm-package/"
   },
   {
     "banner": "typescript.png",
     "title": "A Brief Introduction to Typescript",
     "date": "June 02, 2020",
     "desc": "In short, Typescript extends JavaScript by adding types to the language, which speeds up our development experience by catching errors and providing fixes......",
-    "tags": ["Algorithim", "Sorting", "Graph"],
-    "link": "https://yangblog.org/2020/06/15/10-common-algo-review/"
+    "tags": ["Typescript", "Web", "Notes"],
+    "link": "https://yangblog.org/2020/06/12/07-typescript/"
   }
 ]

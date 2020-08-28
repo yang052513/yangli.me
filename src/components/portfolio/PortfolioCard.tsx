@@ -95,6 +95,7 @@ const StyledDemoBtn = styled.button`
   margin: 15px 10px 15px 0;
   background-color: rgba(0, 0, 0, 0);
   transition: all 0.5s;
+
   &:hover {
     color: white;
     background-color: #03a9f4;
@@ -120,6 +121,7 @@ interface Props {
   link: string
   linkIcon: string
   linkText: string
+  demo?: string
 }
 
 export const PortfolioCard: React.FC<Props> = ({
@@ -135,6 +137,7 @@ export const PortfolioCard: React.FC<Props> = ({
   link,
   linkIcon,
   linkText,
+  demo,
 }) => {
   const [showPlyBtn, setShowPlyBtn] = useState<boolean>(false)
 
@@ -186,12 +189,19 @@ export const PortfolioCard: React.FC<Props> = ({
             ))}
           </ul>
         </StyledToolsWrapper>
+        {!isVideo && (
+          <StyledGithub>
+            <i className={linkIcon}></i>
+            <a href={`https://github.com${link}`}>{linkText}</a>
+          </StyledGithub>
+        )}
 
-        <StyledGithub>
-          <i className={linkIcon}></i>
-          <a href={link}>{linkText}</a>
-        </StyledGithub>
-        <StyledDemoBtn>Live Demo</StyledDemoBtn>
+        <a href={demo}>
+          <StyledDemoBtn>
+            {' '}
+            {isVideo ? 'Watch on Bilibili' : 'Live Demo'}
+          </StyledDemoBtn>
+        </a>
       </StyledInfoWrapper>
       {!isEven && (
         <StyledImageContainer

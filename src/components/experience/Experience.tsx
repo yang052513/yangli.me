@@ -4,7 +4,7 @@ import * as S from '../../styles/shared'
 
 export const Experience: React.FC = () => {
   return (
-    <S.StyledContainer>
+    <S.StyledContainer id="experience">
       <S.StyledSectionTitle data-aos="fade-up">
         Experiences
       </S.StyledSectionTitle>
