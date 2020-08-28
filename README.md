@@ -1,5 +1,5 @@
-# My Personal Website
+# 👋 Hi, this is Yang.
 
-> https://yangli.netlify.app
+> https://yangli.me
 
 ![](public/resource/banner.png)
