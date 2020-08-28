@@ -30,7 +30,7 @@ const StyledButton = styled.button`
 `
 
 export const Portfolio: React.FC = () => {
-  const [panel, setPanel] = useState<string>('npm')
+  const [panel, setPanel] = useState<string>('web')
 
   const handleSwitch = (tab: string) => {
     setPanel(tab)

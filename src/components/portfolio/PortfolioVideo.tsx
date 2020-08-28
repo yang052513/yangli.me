@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import videoData from '../../data/video.json'
 import { PortfolioCard } from './PortfolioCard'
 import { PortfolioVideoPlayer } from './PortfolioVideoPlayer'
+import { CSSTransition } from 'react-transition-group'
 
 const StyledCardContainer = styled.div`
   display: grid;
@@ -24,8 +25,8 @@ export const PortfolioVideo: React.FC = () => {
 
   const closeVideo = () => {
     setVideo({
+      ...video,
       play: false,
-      src: '',
     })
     console.log('关闭')
   }
@@ -50,9 +51,14 @@ export const PortfolioVideo: React.FC = () => {
     <StyledCardContainer>
       {videoList}
 
-      {video.play && (
+      <CSSTransition
+        in={video.play}
+        timeout={500}
+        classNames="fade"
+        unmountOnExit
+      >
         <PortfolioVideoPlayer source={video.src} closeVideo={closeVideo} />
-      )}
+      </CSSTransition>
     </StyledCardContainer>
   )
 }

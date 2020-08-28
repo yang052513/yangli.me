@@ -12,11 +12,12 @@
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.2",
     "aos": "^2.3.4",
-    "jquery": "^3.4.1",
     "react": "^16.13.1",
     "react-animated-fa": "^1.0.2",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-scroll-top-btn": "^1.0.1",
+    "react-transition-group": "^4.4.1",
     "typescript": "^4.0.2"
   },
   "scripts": {

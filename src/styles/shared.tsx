@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledContainer = styled.div`
-  margin: 150px 50px;
+  margin: 200px 50px;
 `
 
 export const StyledSectionTitle = styled.h3`

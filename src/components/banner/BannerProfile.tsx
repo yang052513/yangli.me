@@ -58,21 +58,25 @@ export const BannerProfile: React.FC = () => {
           iconUrl="fab fa-instagram"
           link="https://www.facebook.com/"
           margin={0}
+          layerColor="#03a9f4"
         />
         <Icon
           iconUrl="fab fa-github"
           link="https://www.facebook.com/"
           margin={0}
+          layerColor="#03a9f4"
         />
         <Icon
           iconUrl="fab fa-linkedin-in"
           link="https://www.facebook.com/"
           margin={0}
+          layerColor="#03a9f4"
         />
         <Icon
           iconUrl="fab fa-facebook-messenger"
           link="fas fa-rss"
           margin={0}
+          layerColor="#03a9f4"
         />
       </StyledSocial>
     </StyledContainer>

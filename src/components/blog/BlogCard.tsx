@@ -22,6 +22,7 @@ const StyledDesc = styled.p`
   color: rgb(70, 70, 70);
   line-height: 1.5rem;
   margin-top: 10px;
+  height: 100px;
 `
 const StyledButton = styled.button`
   border: 1px solid #03a9f4;

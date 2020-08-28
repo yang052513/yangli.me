@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-
+import { CSSTransition } from 'react-transition-group'
 const StyledCard = styled.div`
   display: flex;
   width: 70%;
@@ -39,6 +39,7 @@ const StyledPlyBtn = styled.i`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 `
 const StyledInfoWrapper = styled.div`
   flex: 1 1 200px;
@@ -148,7 +149,13 @@ export const PortfolioCard: React.FC<Props> = ({
             src={require(`../../assets/images/portfolio/${banner}`)}
             alt=""
           ></StyledImage>
-          {showPlyBtn && isVideo ? (
+
+          <CSSTransition
+            in={showPlyBtn && isVideo}
+            timeout={500}
+            classNames="fade"
+            unmountOnExit
+          >
             <div>
               <StyledOverlay></StyledOverlay>
               <StyledPlyBtn
@@ -156,7 +163,16 @@ export const PortfolioCard: React.FC<Props> = ({
                 onClick={() => playVideo(id)}
               ></StyledPlyBtn>
             </div>
-          ) : null}
+          </CSSTransition>
+          {/* {showPlyBtn && isVideo ? (
+            <div>
+              <StyledOverlay></StyledOverlay>
+              <StyledPlyBtn
+                className="fab fa-youtube"
+                onClick={() => playVideo(id)}
+              ></StyledPlyBtn>
+            </div>
+          ) : null} */}
         </StyledImageContainer>
       )}
 
@@ -186,7 +202,12 @@ export const PortfolioCard: React.FC<Props> = ({
             src={require(`../../assets/images/portfolio/${banner}`)}
             alt=""
           ></StyledImage>
-          {showPlyBtn && isVideo ? (
+          <CSSTransition
+            in={showPlyBtn && isVideo}
+            timeout={500}
+            classNames="fade"
+            unmountOnExit
+          >
             <div>
               <StyledOverlay></StyledOverlay>
               <StyledPlyBtn
@@ -194,7 +215,7 @@ export const PortfolioCard: React.FC<Props> = ({
                 onClick={() => playVideo(id)}
               ></StyledPlyBtn>
             </div>
-          ) : null}
+          </CSSTransition>
         </StyledImageContainer>
       )}
     </StyledCard>

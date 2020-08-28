@@ -22,6 +22,9 @@ const StyledButton = styled.button`
   &:focus {
     outline: none;
   }
+  i {
+    margin-left: 10px;
+  }
 `
 
 export const AboutResume: React.FC = () => {
