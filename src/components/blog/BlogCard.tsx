@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import * as S from '../../styles/shared'
 
 const StyledCard = styled.div`
   margin: 0 20px 20px 20px;

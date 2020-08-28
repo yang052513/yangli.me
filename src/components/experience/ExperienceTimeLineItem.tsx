@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { StyledText } from '../../styles/shared'
 
 interface Props {
   title: any

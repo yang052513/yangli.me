@@ -11,7 +11,8 @@ const StyledCardContainer = styled.div`
 export const PortfolioWeb: React.FC = () => {
   const portfolioList = portfolioData.map((project, index) => (
     <PortfolioCard
-      isEven={index % 2 == 0 ? true : false}
+      key={project.title}
+      isEven={index % 2 === 0 ? true : false}
       banner={project.banner}
       title={project.title}
       desc={project.desc}

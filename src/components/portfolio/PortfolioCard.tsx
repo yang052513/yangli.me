@@ -182,7 +182,7 @@ export const PortfolioCard: React.FC<Props> = ({
         <StyledToolsWrapper>
           <ul>
             {tools.map((tool: any) => (
-              <StyledTools>{tool}</StyledTools>
+              <StyledTools key={tool}>{tool}</StyledTools>
             ))}
           </ul>
         </StyledToolsWrapper>

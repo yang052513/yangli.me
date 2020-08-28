@@ -33,8 +33,9 @@ export const PortfolioVideo: React.FC = () => {
 
   const videoList = videoData.map((video, index) => (
     <PortfolioCard
+      key={video.id}
       isVideo={true}
-      isEven={index % 2 == 0 ? true : false}
+      isEven={index % 2 === 0 ? true : false}
       id={video.id}
       playVideo={playVideo}
       banner={`${video.id}.png`}

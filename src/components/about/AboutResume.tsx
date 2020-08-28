@@ -33,6 +33,7 @@ export const AboutResume: React.FC = () => {
       <a
         href="https://drive.google.com/file/d/1Dl2enyqIxEzy4jnuaoCoz4JtgM2nDdIh/view?usp=sharing"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <StyledButton>
           DOWNLOAD RESUME

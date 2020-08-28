@@ -24,10 +24,7 @@
     "icon": "fab fa-node",
     "text": "Node.js"
   },
-  {
-    "icon": "fab fa-react",
-    "text": "React"
-  },
+
   {
     "icon": "fab fa-vuejs",
     "text": "Vue"

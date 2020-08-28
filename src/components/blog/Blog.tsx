@@ -11,7 +11,9 @@ const StyledBlogList = styled.div`
 `
 
 export const Blog: React.FC = () => {
-  const blogList = blogData.map(blog => <BlogCard blog={blog} />)
+  const blogList = blogData.map(blog => (
+    <BlogCard key={blog.title} blog={blog} />
+  ))
   return (
     <S.StyledContainer>
       <S.StyledSectionTitle data-aos="fade-up">
