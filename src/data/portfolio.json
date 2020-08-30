@@ -1,5 +1,13 @@
 [
   {
+    "title": "Projecthub",
+    "desc": "🔖 wow such a lovely project management dashboard. A full stack web app that intergeates individual and team project status managerment, periodic anlaysis, socal system including story share and chat feature. Included fully customize setting to custom your app.",
+    "banner": "projecthub.png",
+    "tags": ["React", "Typescript", "Sass", "D3", "Sketch", "Firebase"],
+    "demo": "https://projecthub-yang.web.app/",
+    "github": "/yang052513/projecthub"
+  },
+  {
     "title": "Course Flex",
     "desc": "🗓 Coquitlam college course schedule generator with timetable preview. The app allows students filter and search courses easily without submit a form then direct to a new page everytime Then the app will generate a timetable for student to preview the course schedule. Easy and quick. No more long time gap between classes.",
     "banner": "courseflex.png",
@@ -14,14 +22,6 @@
     "tags": ["React", "Sass", "Google Map APIs", "AdobeXD", "Firebase"],
     "demo": "https://covaid-14.web.app/",
     "github": "/yang052513/no-pandemic"
-  },
-  {
-    "title": "Projecthub",
-    "desc": "🔖 wow such a lovely project management dashboard. A full stack web app that intergeates individual and team project status managerment, periodic anlaysis, socal system including story share and chat feature. Included fully customize setting to custom your app.",
-    "banner": "projecthub.png",
-    "tags": ["React", "Typescript", "Sass", "D3", "Sketch", "Firebase"],
-    "demo": "https://projecthub.web.app",
-    "github": "/yang052513/projecthub"
   },
   {
     "title": "AnimeKnow Mobile",
